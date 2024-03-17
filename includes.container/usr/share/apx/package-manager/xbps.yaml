@@ -1,0 +1,14 @@
+name: xbps
+model: 2
+needsudo: true
+cmdautoremove: xbps-remove --remove-orphans
+cmdclean: xbps-remove --clean-cache
+cmdinstall: xbps-install
+cmdlist: xbps-query -l
+cmdpurge: xbps-remove --recursive
+cmdremove: xbps-remove
+cmdsearch: xbps-query --repository
+cmdshow: xbps-query
+cmdupdate: xbps-install --sync
+cmdupgrade: xbps-install --update
+builtin: true
