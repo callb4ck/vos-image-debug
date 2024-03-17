@@ -15,21 +15,11 @@ modules:
 
 # Put your custom actions behind this comment
 
-- name: example-packages
-  type: apt
-  source:
-    packages:
-    - vim
-
-- name: example-commands
+- name: liquorix-kernel
   type: shell
   commands:
-  - echo Example output
-
-- name: example-modules
-  type: includes
-  includes:
-    - modules/50-install-debs
+  - sh /liquorix-script/install.sh
+  - rm -rf /liquorix-script
 
 # Put your custom actions before this comment
 
