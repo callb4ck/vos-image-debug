@@ -1,0 +1,5 @@
+name: void-glibc
+base: void-glibc-full:latest
+packages: []
+pkgmanager: xbps
+builtin: true
